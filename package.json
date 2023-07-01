@@ -1,27 +1,28 @@
 {
-  "name": "express-hello-world",
+  "name": "qurbanz-website",
   "version": "1.0.0",
   "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
-  "main": "server.js",
+  "main": "./src/js/main.js",
   "scripts": {
-    "serve": "nodemon --watch . server.js",
-    "start": "node server.js",
+    "serve": "nodemon --watch . ./src/js/main.js",
+    "start": "node ./src/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyclic-software/express-hello-world.git"
+    "url": "git+https://github.com/ajitaro/qurbanz-website.git"
   },
-  "author": "Cyclic Software",
-  "license": "MIT",
+  "author": "ajitaro",
   "bugs": {
-    "url": "https://github.com/cyclic-software/express-hello-world/issues"
+    "url": "https://github.com/ajitaro/qurbanz-website/issues"
   },
-  "homepage": "https://github.com/cyclic-software/express-hello-world#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "bootstrap": "^5.3.0",
+    "jquery": "^3.7.0",
+    "popper.js": "^1.16.1"
   }
 }
