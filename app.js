@@ -15,13 +15,15 @@ app.get('/', (req, res) => {
   // res.sendFile('./src/index.html', { root: __dirname })
   res.render('index', {
     layout: 'layouts/main-layout',
-    title: 'Qurbanz'
+    title: 'Qurbanz',
+    route: 'home'
   })
 })
 app.get('/about', (req, res) => {
   res.render('about', {
     layout: 'layouts/main-layout',
-    title: 'About'
+    title: 'About Us',
+    route: 'about'
   })
 })
 app.use('/', (req, res) => {
